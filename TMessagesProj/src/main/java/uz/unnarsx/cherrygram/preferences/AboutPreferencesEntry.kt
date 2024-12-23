@@ -32,7 +32,7 @@ class AboutPreferencesEntry : BasePreferencesEntry {
                 detail = getString(R.string.CGP_About_Desc)
 
                 listener = TGKitTextDetailRow.TGTDListener {
-                    Browser.openUrl(bf.parentActivity, "https://github.com/arsLan4k1390/Cherrygram#readme")
+                    Browser.openUrl(bf.parentActivity, "https://github.com/HeinUmin/CherrygramX#readme")
                 }
             }
 
@@ -106,9 +106,9 @@ class AboutPreferencesEntry : BasePreferencesEntry {
 
                 listener = TGKitTextIconRow.TGTIListener {
                     if (CherrygramCoreConfig.isStandaloneBetaBuild() || CherrygramCoreConfig.isDevBuild()) {
-                        Browser.openUrl(bf.parentActivity, "https://github.com/arsLan4k1390/Cherrygram/")
+                        Browser.openUrl(bf.parentActivity, "https://github.com/HeinUmin/CherrygramX/")
                     } else {
-                        Browser.openUrl(bf.parentActivity, "https://github.com/arsLan4k1390/Cherrygram/commit/" + BuildConfig.GIT_COMMIT_HASH)
+                        Browser.openUrl(bf.parentActivity, "https://github.com/HeinUmin/CherrygramX/commit/" + BuildConfig.GIT_COMMIT_HASH)
                     }
                 }
             }
